@@ -141,11 +141,7 @@ def plot_wavefunctions():
 
 plot_wavefunctions()
 
-evolution_op = np.zeros((N, N), float)
-
-for eigenvalue, eigenvector in zip(*np.linalg.eigh(phi)):
-    cos_phi += np.cos(2*np.pi*eigenvalue/phi0-2*np.pi*phi_ext_ratio)*np.outer(eigenvector, eigenvector)  # am verificat ca sumele de outer dau 1
-
+#evolution_op = np.zeros((N, N), float)
 """
 def make_animation():
     fig = plt.figure()
